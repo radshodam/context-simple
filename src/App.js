@@ -2,6 +2,7 @@ import React from "react";
 import CounterOne from "./comtext/CounterOne";
 import CounterProvider from "./comtext/CounterProvider";
 import CountReducer from "./reducer/CountReducer";
+import CountReducerObj from "./reducer/CountReducerObj";
 function App() {
   return (
     //counterProvider
@@ -11,6 +12,8 @@ function App() {
         <CounterOne />
         <hr />
         <CountReducer />
+        <hr />
+        <CountReducerObj />
       </div>
     </CounterProvider>
   );
