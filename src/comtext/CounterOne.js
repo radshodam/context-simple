@@ -1,10 +1,10 @@
 import React from "react";
 import { useContext } from "react";
 // imp conterContext
-import { CounterContext, useCountActions } from "./CounterProvider";
+import { useCount, useCountActions } from "./CounterProvider";
 function CounterOne() {
   // useContext`
-  const count = useContext(CounterContext); //state
+  const count = useCount(); //state
   //actions
   const actions = useCountActions(); //set state
 
