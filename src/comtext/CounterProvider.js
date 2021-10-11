@@ -17,3 +17,4 @@ const CounterProvider = ({children} ) => {
 };
 
 export default CounterProvider;
+
