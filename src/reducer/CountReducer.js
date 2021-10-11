@@ -1,12 +1,11 @@
-
 import { useReducer } from "react";
 const initialState = 0;
 const reducer = (state, action) => {
   switch (action.type) {
-    case "addOne":
-      return state + 1;
-    case "minusOne":
-      return state - 1;
+    case "increament":
+      return state + action.val;
+    case "decrement":
+      return state - action.val;
     case "reset":
       return 0;
     default:
@@ -15,7 +14,7 @@ const reducer = (state, action) => {
 };
 
 function CountReducer() {
-//   const [count, setCount] = useState(0);
+  //   const [count, setCount] = useState(0);
   //  1. duty also useState=>state managment
   // 2.reduce
 
@@ -33,9 +32,13 @@ function CountReducer() {
           count is :
           <span className={count >= 0 ? "green" : "red"}>{count}</span>
         </h1>
-        <button onClick={()=>dispatch({type:"addOne"})}>Add One</button>
-        {/* <button onClick={reset}>reset</button>
-        <button onClick={minusOne}>minus One</button> */}
+        <button onClick={() => dispatch({ type: "increament", val: 1 })}>
+          Add One
+        </button>
+        <button onClick={() => dispatch({ type: "reset" })}>reset</button>
+        <button onClick={() => dispatch({ type: "decrement", val: 1 })}>
+          minus One
+        </button>
       </div>
     </div>
   );
