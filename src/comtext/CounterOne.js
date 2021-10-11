@@ -1,5 +1,4 @@
 import React from "react";
-import { useContext } from "react";
 // imp conterContext
 import { useCount, useCountActions } from "./CounterProvider";
 function CounterOne() {
