@@ -3,6 +3,7 @@ import CounterOne from "./comtext/CounterOne";
 import CounterProvider from "./comtext/CounterProvider";
 import CountReducer from "./reducer/CountReducer";
 import CountReducerObj from "./reducer/CountReducerObj";
+import CountReducerObj2 from "./reducer/CountReducerObj2";
 function App() {
   return (
     //counterProvider
@@ -14,6 +15,8 @@ function App() {
         <CountReducer />
         <hr />
         <CountReducerObj />
+        <hr/>
+        <CountReducerObj2/>
       </div>
     </CounterProvider>
   );
